@@ -1,0 +1,18 @@
+<% provide:title, "Help" %>
+
+<!DOCTYPE html>
+<html>
+ <head>
+   <title><%= yield :title %> | Ruby on Rails Tutorial Sample App</title>
+ </head>
+ <body>
+   <h1>Help</h1>
+   <p> 
+     Get help on the Ruby on Rails Tutorial at the  Rails Tutorial Help page
+     <%= link_to "Ruby on Rails Tutorial", Settings.source.collection.r %>
+
+     .To get help on this sample app, see the
+     <%= link_to "Ruby on Rails Tutorial", Settings.source.collection.book %>. 
+   </p>
+ </body>
+</html>
