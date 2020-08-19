@@ -8,6 +8,8 @@ gem "rails", "~> 6.0.3", ">= 6.0.3.2"
 
 gem "mysql2"
 
+gem "bcrypt", "3.1.15"
+
 gem "config"
 
 gem "puma", "~> 4.1"

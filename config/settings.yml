@@ -1,4 +1,8 @@
 source:
    collection:
     r: http://www.railstutorial.org/help
-    book: http://www.railstutorial.org/book/
+    book: http://www.railstutorial.org/book
+    names_max: 50
+    email_max: 255
+    password_min: 6
+    eamil_valid_regex:  /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
