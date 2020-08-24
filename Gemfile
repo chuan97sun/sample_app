@@ -12,6 +12,8 @@ gem "bcrypt", "3.1.15"
 
 gem "config"
 
+gem "jquery-rails"
+
 gem "puma", "~> 4.1"
 
 gem "sass-rails", ">= 6"
