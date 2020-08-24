@@ -6,3 +6,4 @@ source:
     email_max: 255
     password_min: 6
     eamil_valid_regex:  /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+    gravatar_user_size: 80
