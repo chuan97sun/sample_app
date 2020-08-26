@@ -1,2 +1,31 @@
 en:
   hello: "Hello world"
+  
+  users:
+    new:
+      sign_up_title: "Sign up"
+      sign_up: "Sign Up"
+      Create_my_account: "Create my account"
+    create:
+      successfully_create: "Welcome to Sample App"
+      fail_to_create: "Account created fail"
+    update:
+      updated_sucessfully: "updated sucessfully"
+      cannot_be_updated: "cannot be updated"
+    destroy:
+      User_deleted: "User deleted"
+      fail_to_delete: "fail to delete"
+    logged_in_user:
+      Please_log_in: "Please login"
+    edit:
+      change_button: "change the profile"
+      editcreate: "Save changes"
+      edittitle: "Edit user"
+    show:
+      user_cannot_be_detected: "user cannot be detected"
+
+  sessions:
+    create:
+      invalid_email: "Invalid email/password combination"
+      message_one: "Account not activated. "
+      message_two: "Check your email for the activation link."

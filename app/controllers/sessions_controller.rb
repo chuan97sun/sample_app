@@ -6,9 +6,9 @@ class SessionsController < ApplicationController
     if user&.authenticate params[:session][:password]
       log_in user
       params[:session][:remember_me].eql? Settings.source.collection.session_controller_create ? remember(user) : forget(user)
-      redirect_to user
+      redirect_back_or user
     else
-      flash.now[:danger] = "Invalid email/password combination" 
+      flash.now[:danger] = t ".invalid_email" 
       render :new
     end
   end
