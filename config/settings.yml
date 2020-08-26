@@ -7,3 +7,4 @@ source:
     password_min: 6
     eamil_valid_regex:  /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
     gravatar_user_size: 80
+    session_controller_create: 1
