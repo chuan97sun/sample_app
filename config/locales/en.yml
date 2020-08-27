@@ -1,5 +1,9 @@
 en:
   hello: "Hello world"
+
+  account_activations:
+    activated_fail: "Invalid activation link."
+    activated_success: "Account activated"
   
   users:
     new:
@@ -9,6 +13,7 @@ en:
     create:
       successfully_create: "Welcome to Sample App"
       fail_to_create: "Account created fail"
+      email_sent: "activation email is sent"
     update:
       updated_sucessfully: "updated sucessfully"
       cannot_be_updated: "cannot be updated"
@@ -27,5 +32,4 @@ en:
   sessions:
     create:
       invalid_email: "Invalid email/password combination"
-      message_one: "Account not activated. "
-      message_two: "Check your email for the activation link."
+      account_not_activated: "Account not activated. Please check your email for the activation link."
