@@ -33,3 +33,13 @@ en:
     create:
       invalid_email: "Invalid email/password combination"
       account_not_activated: "Account not activated. Please check your email for the activation link."
+  
+  password_resets:
+    create:
+      not_email: "Email address not found."
+      with_email: "Email sent with password reset instructions."
+    update:
+      reset_success: "Password has been reset."
+      reset_fail: "password reset fail"
+    check_expiration:
+      reset_expired: "Password reset has expired"

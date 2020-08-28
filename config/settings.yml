@@ -9,3 +9,4 @@ source:
     gravatar_user_size: 80
     session_controller_create: 1
     gravatar_link: https://gravatar.com/emails
+    reset_expired: 2
