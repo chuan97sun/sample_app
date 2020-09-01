@@ -6,6 +6,7 @@ en:
     activated_success: "Account activated"
   
   users:
+    logincall: "PLEASE LOGIN"
     new:
       sign_up_title: "Sign up"
       sign_up: "Sign Up"
@@ -43,3 +44,10 @@ en:
       reset_fail: "password reset fail"
     check_expiration:
       reset_expired: "Password reset has expired"
+
+  microposts:
+    create:
+      Micropost_created: "Micropost created"
+      micropost_not_created: "micropost not created"
+    destroy:
+      Micropost_deleted: "Micropost deleted"

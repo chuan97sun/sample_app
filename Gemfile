@@ -28,11 +28,17 @@ gem "bootsnap", ">= 1.4.2", require: false
 
 gem "faker"
 
+gem "image_processing", "1.9.3"
+
 gem "kaminari"
+
+gem "mini_magick", "4.9.5"
 
 gem "rails-i18n"
 
 gem "figaro"
+
+gem "active_storage_validations", "0.8.2"
 
 group :development, :test do
  
