@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_action :logged_in_user, except: %i(show new create)
+  before_action :logged_in_user, except: %i(new create)
   before_action :load_user, except: %i(new create index)
   before_action :correct_user, only: %i(edit update)
   before_action :admin_user, only: :destroy
@@ -14,6 +14,8 @@ class UsersController < ApplicationController
   
   def show
     @microposts = @user.microposts.recent_posts.page params[:page]
+    @follow = current_user.active_relationships.build
+    @unfollow = current_user.following
   end
 
   def create
@@ -49,7 +51,6 @@ class UsersController < ApplicationController
     end
     redirect_to users_path
   end
-
 
   private 
 

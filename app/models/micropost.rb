@@ -6,6 +6,7 @@ class Micropost < ApplicationRecord
   validates :image, content_type: { in: %w[image/jpeg image/gif image/png], message: "must be a valid image format" }, size: { less_than: 5.megabytes, message: "should be less than 5MB" }
   
   scope :recent_posts, ->{order created_at: :desc}
+  scope :feed_by_user, ->(user_ids){where user_id: user_ids}
   
   def display_image
     image.variant(resize_to_limit: [500, 500])
