@@ -6,7 +6,7 @@ ruby "2.7.1"
 
 gem "rails", "~> 6.0.3", ">= 6.0.3.2"
 
-gem "mysql2"
+gem "sqlite3"
 
 gem "bcrypt", "3.1.15"
 
