@@ -53,7 +53,7 @@ before_action :set_review, only: [:edit, :update, :destroy]
   end
 
   def set_review
-    @review = Review.find_by (params[:id])
+    @review = Review.find (params[:id])
   end
 
 end

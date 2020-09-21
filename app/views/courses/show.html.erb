@@ -31,12 +31,10 @@
   <%= @course.total_month %>
 </p>
   
-<p><%= link_to "add review", new_course_review_path(@course) %><p/>
+<%= link_to "add review", new_course_review_path(@course) %>|
 
 <% if current_user.admin? %>
-  <p>
-    <%= link_to "update the course", edit_course_path %>
-  <p/>
+  <%= link_to "update the course", edit_course_path %> |
 <%end%>
 
 <%= link_to "view other course", courses_path %>
