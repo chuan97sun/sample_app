@@ -1,4 +1,5 @@
 Rails.application.routes.draw do	
+  get 'courses/new'
   scope "(:locale)", locale: /en/ do
     root "static_page#home"
     get "/help", to: "static_page#help"
@@ -8,6 +9,9 @@ Rails.application.routes.draw do
     post "/login", to: "sessions#create"
     delete "/logout", to: "sessions#destroy"
     resources :account_activations, only: :edit
+    resources :courses do
+      resources :reviews
+    end
     resources :password_resets, except: %i(index show destroy)
     resources :microposts, only: %i(create destroy)
     resources :relationships, only: %i(create destroy)

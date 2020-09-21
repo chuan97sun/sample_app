@@ -1,0 +1,46 @@
+<% provide :title, @course.name %>
+
+<p>
+  <strong>Title:</strong>
+  <%= @course.name %>
+</p>
+
+<p>
+  <strong>status:</strong>
+  <%= @course.status %>
+</p>
+
+<p>
+  <strong>description:</strong>
+  <%= @course.introduction %>
+</p>
+
+<p>
+  <strong>starting date:</strong>
+  <%= @course.started_at %>
+</p>
+
+
+<p>
+  <strong>member:</strong>
+  <%= @course.member %>
+</p>
+
+<p>
+  <strong>duration of course:</strong>
+  <%= @course.total_month %>
+</p>
+  
+<p><%= link_to "add review", new_course_review_path(@course) %><p/>
+
+<% if current_user.admin? %>
+  <p>
+    <%= link_to "update the course", edit_course_path %>
+  <p/>
+<%end%>
+
+<%= link_to "view other course", courses_path %>
+
+<p><%= "COURSE REVIEW" %></p>
+
+<%= render @course.reviews %>
