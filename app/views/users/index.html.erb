@@ -1,6 +1,18 @@
 <% provide :title, "All users" %>
-<h1>All users</h1>
 
+<% if current_user.admin? && !current_user?(@user) %> |
+ <h1>admins</h1>
+<%= paginate @users.admin %>
+
+<ul class="users">
+  <%= render @users.admin %>
+</ul>
+
+<%= paginate @users.admin %>
+
+<% end %>
+
+<h1>users</h1>
 <%= paginate @users %>
 
 <ul class="users">

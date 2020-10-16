@@ -1,0 +1,13 @@
+
+<% provide :title, "All courses" %>
+<h1>All cousess</h1>
+
+<%= paginate @course %> 
+
+<ul class="courses">
+  <%= render @course %>
+</ul>
+<%= paginate @course %> 
+<% if current_user.admin? %>
+<%= link_to "create new course", new_course_url %>
+<%end%>

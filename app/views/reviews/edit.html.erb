@@ -1,0 +1,13 @@
+<% provide :title, ("edit review") %>
+<% provide :button_text, ("edit review") %>
+<h1>edit your review <h1>
+
+<%= form_for [@course, @review] do |f| %>
+
+  <%= render "shared/error_messages", object: f.object %>
+  <%= f.label :content %>
+  <%= f.text_field :content, class: "form-control" %>
+
+
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>

@@ -1,0 +1,17 @@
+<%= form_for @course do |f| %>
+  <%= render "shared/error_messages", object: f.object %>
+  <%= f.label :name %>
+  <%= f.text_field :name, class: "form-control" %>
+  <%= f.label :started_at %>
+  <%= f.date_field :started_at, class: "form-control" %>
+  <%= f.label :total_month %>
+  <%= f.number_field :total_month, class: "form-control" %>
+  <%= f.label :member %>
+  <%= f.number_field :member, class: "form-control" %>
+  <%= f.label :status %>
+  <%= f.text_field :status, class: "form-control" %>
+  <%= f.label :introduction %>
+  <%= f.text_field :introduction, class: "form-control" %>
+
+  <%= f.submit yield(:button_text), class: "btn btn-primary" %>
+<% end %>
